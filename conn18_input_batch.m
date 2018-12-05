@@ -70,8 +70,8 @@ for id  = 1:length(dirfiles)
 idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'rs1'), '^f.*\.nii$'); 
 idfile2 = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'rs2'), '^f.*\.nii$'); 
 
-BATCH.Setup.functionals{id}{1} = idfile; % ³Ö°í ½ÍÀº ÀÚ¸® id BATCH.Setup.functionals{sub#}{session}
-BATCH.Setup.functionals{id}{2} = idfile2; % ³Ö°í ½ÍÀº ÀÚ¸® id BATCH.Setup.functionals{sub#}{session}
+BATCH.Setup.functionals{id}{1} = idfile; % ë„£ê³  ì‹¶ì€ ìë¦¬ id BATCH.Setup.functionals{sub#}{session}
+BATCH.Setup.functionals{id}{2} = idfile2; % ë„£ê³  ì‹¶ì€ ìë¦¬ id BATCH.Setup.functionals{sub#}{session}
 
 end
 
