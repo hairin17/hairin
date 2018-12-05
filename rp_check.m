@@ -8,7 +8,7 @@ dirfiles = dirfiles1(3:length(dirfiles1)); %excl . ..
 
 for id  = 1:117
 
-idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'cb'), '^rp.*\.txt$'); % ∫“∑ØµÈ¿œ id
+idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'cb'), '^rp.*\.txt$'); % Î∂àÎü¨Îì§Ïùº id
 rp = load(idfile);
 ncount(id,:) = sum(abs(rp) >= 3);
 mov_id(id) = any(ncount(id,:)) > 0;
@@ -18,7 +18,7 @@ end
 %% rp_dspl_mean
 for id = [1:80, 82:117];
 
-idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'cb'), '^rp.*\.txt$'); % ∫“∑ØµÈ¿œ id
+idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'cb'), '^rp.*\.txt$'); % Î∂àÎü¨Îì§Ïùº id
 rp = load(idfile);
 
     for k = 1:179
@@ -33,7 +33,7 @@ end
 %% rp_dspl_2mm prior
 for id = 1:length(dirfiles)
 
-idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'cb'), '^rp.*\.txt$'); % ∫“∑ØµÈ¿œ id
+idfile = spm_select('FPList', fullfile(data_path, dirfiles(id).name, 'cb'), '^rp.*\.txt$'); % Î∂àÎü¨Îì§Ïùº id
 rp = load(idfile);
 
     for k = 1:179
